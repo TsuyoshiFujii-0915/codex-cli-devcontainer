@@ -1,0 +1,228 @@
+{
+    "name": "Codex CLI Sandbox",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "settings": {
+                "workbench.colorCustomizations": {
+                    // === EDITOR AREA ===
+                    "editor.background": "#131217",
+                    "editor.foreground": "#ffffff",
+                    "editor.lineHighlightBackground": "#201d24",
+                    "editor.selectionBackground": "#30384e60",
+                    "editor.inactiveSelectionBackground": "#30384e30",
+                    "editor.findMatchBackground": "#3f2b2780",
+                    "editor.findMatchHighlightBackground": "#3f2b2740",
+                    "editor.rangeHighlightBackground": "#30384e20",
+                    "editor.wordHighlightBackground": "#30384e40",
+                    "editor.wordHighlightStrongBackground": "#30384e60",
+                    
+                    // === SIDEBAR ===
+                    "sideBar.background": "#060608",
+                    "sideBar.foreground": "#e8e8e8",
+                    "sideBar.border": "#30384e",
+                    "sideBarSectionHeader.background": "#30384e",
+                    "sideBarSectionHeader.foreground": "#ffffff",
+                    "sideBarSectionHeader.border": "#292c36",
+                    
+                    // === ACTIVITY BAR ===
+                    "activityBar.background": "#060608",
+                    "activityBar.foreground": "#d0d0d0",
+                    "activityBar.border": "#30384e",
+                    "activityBar.activeBorder": "#30384e",
+                    "activityBar.activeBackground": "#30384e40",
+                    "activityBar.activeForeground": "#ffffff",
+                    "activityBarBadge.background": "#3f2b27",
+                    "activityBarBadge.foreground": "#ffffff",
+                    
+                    // === PANEL (Terminal, Problems, etc.) ===
+                    "panel.background": "#131217",
+                    "panel.border": "#30384e",
+                    "panel.dropBorder": "#30384e",
+                    "panelTitle.activeForeground": "#ffffff",
+                    "panelTitle.inactiveForeground": "#b0b0b0",
+                    "panelTitle.activeBorder": "#30384e",
+                    "panelInput.border": "#30384e",
+                    
+                    // === TERMINAL ===
+                    "terminal.background": "#060608",
+                    "terminal.foreground": "#ffffff",
+                    "terminal.selectionBackground": "#30384e40",
+                    "terminal.ansiBlack": "#060608",
+                    "terminal.ansiRed": "#ff6b6b",
+                    "terminal.ansiGreen": "#51cf66",
+                    "terminal.ansiYellow": "#ffd93d",
+                    "terminal.ansiBlue": "#74c0fc",
+                    "terminal.ansiMagenta": "#da77f2",
+                    "terminal.ansiCyan": "#22d3ee",
+                    "terminal.ansiWhite": "#ffffff",
+                    "terminal.ansiBrightBlack": "#4a3e3c",
+                    "terminal.ansiBrightRed": "#ff8787",
+                    "terminal.ansiBrightGreen": "#8ce99a",
+                    "terminal.ansiBrightYellow": "#ffec99",
+                    "terminal.ansiBrightBlue": "#91d5ff",
+                    "terminal.ansiBrightMagenta": "#e599f7",
+                    "terminal.ansiBrightCyan": "#99e9f2",
+                    "terminal.ansiBrightWhite": "#ffffff",
+                    
+                    // === STATUS BAR ===
+                    "statusBar.background": "#30384e",
+                    "statusBar.foreground": "#ffffff",
+                    "statusBar.border": "#201d24",
+                    "statusBar.noFolderBackground": "#3f2b27",
+                    "statusBar.noFolderForeground": "#ffffff",
+                    "statusBar.debuggingBackground": "#3f2b27",
+                    "statusBar.debuggingForeground": "#ffffff",
+                    "statusBarItem.prominentBackground": "#3f2b27",
+                    "statusBarItem.prominentForeground": "#ffffff",
+                    "statusBarItem.hoverBackground": "#30384e80",
+                    "statusBarItem.remoteBackground": "#3f2b27",
+                    "statusBarItem.remoteForeground": "#ffffff",
+                    
+                    // === TITLE BAR ===
+                    "titleBar.activeBackground": "#30384e",
+                    "titleBar.activeForeground": "#ffffff",
+                    "titleBar.inactiveBackground": "#131217",
+                    "titleBar.inactiveForeground": "#b0b0b0",
+                    "titleBar.border": "#30384e",
+                    
+                    // === TABS ===
+                    "tab.activeBackground": "#131217",
+                    "tab.activeForeground": "#ffffff",
+                    "tab.activeBorder": "#30384e",
+                    "tab.activeBorderTop": "#30384e",
+                    "tab.inactiveBackground": "#060608",
+                    "tab.inactiveForeground": "#b0b0b0",
+                    "tab.border": "#201d24",
+                    "tab.hoverBackground": "#30384e40",
+                    "tab.hoverForeground": "#ffffff",
+                    "tab.modifiedBorder": "#3f2b27",
+                    "tab.unfocusedActiveForeground": "#d0d0d0",
+                    "tab.unfocusedInactiveForeground": "#808080",
+                    
+                    // === LISTS (File Explorer, etc.) ===
+                    "list.activeSelectionBackground": "#30384e80",
+                    "list.activeSelectionForeground": "#ffffff",
+                    "list.inactiveSelectionBackground": "#30384e40",
+                    "list.inactiveSelectionForeground": "#ffffff",
+                    "list.hoverBackground": "#30384e30",
+                    "list.hoverForeground": "#ffffff",
+                    "list.focusBackground": "#30384e60",
+                    "list.focusForeground": "#ffffff",
+                    "list.errorForeground": "#ff6b6b",
+                    "list.warningForeground": "#ffd93d",
+                    
+                    // === INPUTS & DROPDOWNS ===
+                    "input.background": "#201d24",
+                    "input.foreground": "#ffffff",
+                    "input.border": "#30384e",
+                    "input.placeholderForeground": "#a0a0a0",
+                    "inputOption.activeBorder": "#30384e",
+                    "dropdown.background": "#201d24",
+                    "dropdown.foreground": "#ffffff",
+                    "dropdown.border": "#30384e",
+                    "dropdown.listBackground": "#131217",
+                    
+                    // === BUTTONS ===
+                    "button.background": "#30384e",
+                    "button.foreground": "#ffffff",
+                    "button.hoverBackground": "#3f2b27",
+                    "button.secondaryBackground": "#292c36",
+                    "button.secondaryForeground": "#ffffff",
+                    "button.secondaryHoverBackground": "#30384e",
+                    
+                    // === SCROLL BARS ===
+                    "scrollbar.shadow": "#06060880",
+                    "scrollbarSlider.background": "#30384e60",
+                    "scrollbarSlider.hoverBackground": "#30384e80",
+                    "scrollbarSlider.activeBackground": "#30384e",
+                    
+                    // === BORDERS & SEPARATORS ===
+                    "contrastBorder": "#30384e",
+                    "focusBorder": "#30384e",
+                    "widget.shadow": "#06060860",
+                    "separator.foreground": "#30384e",
+                    
+                    // === NOTIFICATIONS ===
+                    "notificationCenter.border": "#30384e",
+                    "notifications.background": "#201d24",
+                    "notifications.foreground": "#ffffff",
+                    "notifications.border": "#30384e",
+                    "notificationsErrorIcon.foreground": "#ff6b6b",
+                    "notificationsWarningIcon.foreground": "#ffd93d",
+                    "notificationsInfoIcon.foreground": "#74c0fc",
+                    
+                    // === BREADCRUMBS ===
+                    "breadcrumb.foreground": "#b0b0b0",
+                    "breadcrumb.background": "#131217",
+                    "breadcrumb.focusForeground": "#ffffff",
+                    "breadcrumb.activeSelectionForeground": "#30384e",
+                    
+                    // === MENU ===
+                    "menu.background": "#201d24",
+                    "menu.foreground": "#ffffff",
+                    "menu.selectionBackground": "#30384e80",
+                    "menu.selectionForeground": "#ffffff",
+                    "menu.border": "#30384e",
+                    "menubar.selectionBackground": "#30384e60",
+                    "menubar.selectionForeground": "#ffffff",
+                    
+                    // === PEEK VIEW ===
+                    "peekView.border": "#30384e",
+                    "peekViewEditor.background": "#131217",
+                    "peekViewResult.background": "#201d24",
+                    "peekViewTitle.background": "#30384e60",
+                    "peekViewTitleDescription.foreground": "#ffffff",
+                    "peekViewTitleLabel.foreground": "#ffffff",
+                    
+                    // === DIFF EDITOR ===
+                    "diffEditor.insertedTextBackground": "#30384e30",
+                    "diffEditor.removedTextBackground": "#3f2b2730",
+                    "diffEditor.insertedLineBackground": "#30384e20",
+                    "diffEditor.removedLineBackground": "#3f2b2720",
+                    "diffEditor.border": "#30384e",
+                    
+                    // === GIT DECORATIONS ===
+                    "gitDecoration.addedResourceForeground": "#51cf66",
+                    "gitDecoration.modifiedResourceForeground": "#ffd93d",
+                    "gitDecoration.deletedResourceForeground": "#ff6b6b",
+                    "gitDecoration.untrackedResourceForeground": "#74c0fc",
+                    "gitDecoration.ignoredResourceForeground": "#808080",
+                    "gitDecoration.conflictingResourceForeground": "#da77f2",
+                    
+                    // === SEARCH ===
+                    "searchEditor.findMatchBackground": "#3f2b2760",
+                    "search.resultsInfoForeground": "#ffffff",
+                    "searchEditor.textInputBorder": "#30384e",
+                    
+                    // === WELCOME PAGE ===
+                    "welcomePage.background": "#131217",
+                    "welcomePage.buttonBackground": "#30384e",
+                    "welcomePage.buttonHoverBackground": "#3f2b27",
+                    
+                    // === EDITOR WIDGET ===
+                    "editorWidget.background": "#201d24",
+                    "editorWidget.foreground": "#ffffff",
+                    "editorWidget.border": "#30384e",
+                    "editorSuggestWidget.background": "#201d24",
+                    "editorSuggestWidget.foreground": "#ffffff",
+                    "editorSuggestWidget.border": "#30384e",
+                    "editorSuggestWidget.selectedBackground": "#30384e60",
+                    "editorHoverWidget.background": "#201d24",
+                    "editorHoverWidget.foreground": "#ffffff",
+                    "editorHoverWidget.border": "#30384e"
+                }
+            }
+        }
+    },
+    "remoteUser": "node",
+    "mounts": [
+        "source=codex-cli-bashhistory,target=/commandhistory,type=volume",
+        "source=codex-cli-config,target=/home/node/.codex,type=volume"
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/workspace"
+}
