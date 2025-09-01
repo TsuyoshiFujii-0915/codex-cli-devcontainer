@@ -5,7 +5,9 @@
     },
     "customizations": {
         "vscode": {
-            "extensions": [],
+            "extensions": [
+                "openai.chatgpt"
+            ],
             "settings": {
                 "workbench.colorCustomizations": {
                     // === EDITOR AREA ===

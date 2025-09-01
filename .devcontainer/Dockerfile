@@ -18,11 +18,8 @@ RUN apt update && apt install -y less \
     aggregate \
     jq
 
-# Install uv for Python package management
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh
-
 # Install Codex CLI
-RUN npm install -g @openai/codex@latest
+RUN npm install -g @openai/codex
 
 # Create workspace and config directories and set permissions
 RUN mkdir -p /workspace /home/node/.codex && \
@@ -31,3 +28,6 @@ WORKDIR /workspace
 
 # Set up non-root user
 USER node
+
+# Install uv for Python package management
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
