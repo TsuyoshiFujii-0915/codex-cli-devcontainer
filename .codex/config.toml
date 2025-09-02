@@ -1,0 +1,4 @@
+projects = { "/workspace" = { trust_level = "trusted" } }
+approval_policy = "on-failure"
+model_reasoning_effort = "high"
+sandbox_mode = "danger-full-access"
