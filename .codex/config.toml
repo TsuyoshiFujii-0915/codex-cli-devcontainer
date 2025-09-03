@@ -1,4 +1,5 @@
 projects = { "/workspace" = { trust_level = "trusted" } }
+
 approval_policy = "on-failure"
 model_reasoning_effort = "high"
 sandbox_mode = "danger-full-access"
@@ -7,5 +8,5 @@ sandbox_mode = "danger-full-access"
 web_search = true
 
 [mcp_servers.context7]
-args = ["-y", "@upstash/context7-mcp"]
 command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
