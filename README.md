@@ -43,8 +43,8 @@ codex
 
 ### Optionally copy project `.codex` to `/home/node/.codex`
 
-The `.codex` directory at the project root contains Codex CLI settings (config.toml) and agent guidelines (AGENTS.md). If helpful, you can copy the following files into your home directory at `/home/node/.codex`.
+The `.codex` directory at the project root contains Codex CLI settings and agent guidelines. If helpful, you can copy the following files into your home directory at `/home/node/.codex`.
 
 - Files:
-  - `.codex/config.toml`
-  - `.codex/AGENTS.md`
+  - `.codex/config.toml`: Codex CLI settings
+  - `.codex/AGENTS.md`: Agent guidelines (global instruction)
