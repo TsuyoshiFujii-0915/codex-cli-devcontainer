@@ -41,8 +41,10 @@ codex
 - Absolute: `/home/node/.codex`
 - Relative to the workspace root: `../home/node/.codex`
 
-## Optionally copy project `.codex` to `/home/node/.codex`
+### Optionally copy project `.codex` to `/home/node/.codex`
 
 The `.codex` directory at the project root contains Codex CLI settings (config.toml) and agent guidelines (AGENTS.md). If helpful, you can copy the following files into your home directory at `/home/node/.codex`.
 
-- Files: `.codex/config.toml`, `.codex/AGENTS.md`
+- Files:
+  - `.codex/config.toml`
+  - `.codex/AGENTS.md`
