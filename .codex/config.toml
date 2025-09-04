@@ -13,4 +13,4 @@ args = ["-y", "@upstash/context7-mcp@latest"]
 
 [mcp_servers.playwright]
 command = "npx"
-args = ["-y", "@playwright/mcp"]
+args = ["-y", "@playwright/mcp@latest", "--browser=chromium", "--isolated", "--no-sandbox"]

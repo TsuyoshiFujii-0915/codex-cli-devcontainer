@@ -1,5 +1,9 @@
 FROM node:22
 
+ENV DEBIAN_FRONTEND=noninteractive \
+    PLAYWRIGHT_BROWSERS_PATH=/ms-playwright \
+    PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
+
 # Install basic development tools and iptables/ipset
 RUN apt update && apt install -y less \
     git \
@@ -25,6 +29,11 @@ RUN npm install -g @openai/codex
 RUN mkdir -p /workspace /home/node/.codex && \
     chown -R node:node /workspace /home/node/.codex
 WORKDIR /workspace
+
+# Install Playwright and browsers
+RUN mkdir -p /ms-playwright && \
+    npx -y playwright@latest install-deps chromium && \
+    chown -R node:node /ms-playwright
 
 # Set up non-root user
 USER node
