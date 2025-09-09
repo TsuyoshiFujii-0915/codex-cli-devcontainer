@@ -23,7 +23,7 @@ RUN apt update && apt install -y less \
     jq
 
 # Install Codex CLI
-RUN npm install -g @openai/codex
+RUN npm install -g @openai/codex@latest
 
 # Create workspace and config directories and set permissions
 RUN mkdir -p /workspace /home/node/.codex && \
