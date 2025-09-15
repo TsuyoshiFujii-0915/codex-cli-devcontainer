@@ -1,5 +1,7 @@
 projects = { "/workspace" = { trust_level = "trusted" } }
 
+model = "gpt-5-codex"
+
 approval_policy = "on-failure"
 model_reasoning_effort = "high"
 sandbox_mode = "danger-full-access"
